@@ -13,10 +13,16 @@ app.get('', (req, res)=>{
     })
 })
 
-app.get('', (req, res)=>{
+app.get('/about', (req, res)=>{
     res.render('about', {
         title: 'About me',
         name: 'Katalina Kivinen'
+    })
+})
+app.get('/help', (req, res)=>{
+    res.render('help', {
+        title: 'Help page',
+        helpText: 'This application can show you weather'
     })
 })
 
